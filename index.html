@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamara Brilla!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+</head>
+
+<body>
+    <header class="container-encabezado">
+        <nav class="barra-navegacion">
+            <picture class="logo">
+                <img src="images/708697_737487.webp" alt="logo">
+
+            </picture>
+            <!-- <h1 class="titulo-principal">Tamara Brilla</h1> -->
+            <ul class="botonera">
+                <li><a class="link-no-style button" href="#dona">Donaciones</a></li>
+                <li><a class="link-no-style" href="#">La causa</a></li>
+                <li><a class="link-no-style" href="#">Recaudado</a></li>
+                <li><a class="link-no-style" href="#">Publicaciones</a></li>
+                <li><a class="link-no-style" href="#">FAQ</a></li>
+                <li><a class="link-no-style" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- <div>
+            <p>mail@mail.com</p>
+            <p>telefono</p>
+            <p>idioma</p>
+        </div> -->
+    </header>
+    <main>
+        <!-- CAROUSEL -->
+        <section class="seccion-principal">
+            <div class="container-carousel">
+                <div class="divider-thumbnails">
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img class="slides-images" src="images/TamBrilla01-es.jpeg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img class="slides-images" src="images/TamBrilla02-es.jpeg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img class="slides-images" src="images/TamBrilla03-es.jpeg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img class="slides-images" src="images/TamBrilla04-es.jpeg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img class="slides-images" src="images/TamBrilla05-es.jpeg">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+                <div class="container-thumbnails">
+                    <!-- Thumbnail images -->
+                    <div class="column">
+                        <div class="row">
+                            <img class="demo cursor thumbnail-images" src="images/TamBrilla01-es.jpeg"
+                                onclick="currentSlide(1)" alt="Soy Tamara">
+                        </div>
+                        <div class="row">
+                            <img class="demo cursor thumbnail-images" src="images/TamBrilla02-es.jpeg"
+                                onclick="currentSlide(2)" alt="Linfoma del Manto (LCM)">
+                        </div>
+                        <div class="row">
+                            <img class="demo cursor thumbnail-images" src="images/TamBrilla03-es.jpeg"
+                                onclick="currentSlide(3)" alt="¿Que sigue?">
+                        </div>
+                        <div class="row">
+                            <img class="demo cursor thumbnail-images" src="images/TamBrilla04-es.jpeg"
+                                onclick="currentSlide(4)" alt="Esperanza">
+                        </div>
+                        <div class="row">
+                            <img class="demo cursor thumbnail-images" src="images/TamBrilla05-es.jpeg"
+                                onclick="currentSlide(5)" alt="¿Me ayudas?">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="container-progress">
+                <div class="progress-info">
+                    <p>Ayudemos a:</p>
+                    <h2>Tamara Kostetsky</h2>
+
+
+                    <picture class="progress-contenedor-imagen">
+                        <img src="images/tamAvatar.jpg" alt="Foto de Tamara Kostetsky">
+                    </picture>
+                </div>
+                <div class="card-progress">
+                    <p>Tu donación nos acerca a la meta</p>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-porcentaje">
+                            <p class="txt-progress">5%</p>
+                        </div>
+                    </div>
+                    <p>U$D 18.000 recaudados de U$D 400.000</p>
+
+                </div>
+            </aside>
+            <!-- <div class="contenedor-carousel">
+
+            </div>
+            <div></div> -->
+
+        </section>
+        <!-- DONACIONES -->
+        <section>
+
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

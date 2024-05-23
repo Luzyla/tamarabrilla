@@ -14,11 +14,11 @@
         <nav class="barra-navegacion">
             <h1 class="titulo-principal">@Tamvisual</h1>
             <ul class="botonera">
+                <li><a class="link-no-style" href="#recaudado">Progreso</a></li>
                 <li><a class="link-no-style" href="#lacausa">¿Qué tengo?</a></li>
-                <li><a class="link-no-style" href="#recaudado">Recaudado</a></li>
-                <li><a class="link-no-style" href="#publis">Publicaciones</a></li>
                 <li><a class="link-no-style" href="#faq">FAQ</a></li>
                 <li><a class="link-no-style" href="#contacto">Contacto</a></li>
+                <li><a class="link-no-style button button-donar" href="#donar">Donar</a></li>
             </ul>
         </nav>
     </header>
@@ -40,8 +40,8 @@
                         <h2 class="progress-info__title">Tamara Kostetsky</h2>
                     </div>
                 </div>
-                <li class="button-donar">
-                    <a class="link-no-style button" href="#dona">Tu Donación aquí</a>
+                <li>
+                    <a class="link-no-style button button-hero" href="#donar">Tu Donación aquí</a>
                 </li>
                 <!-- <p>Tu donación nos acerca a la meta</p> -->
 
@@ -125,14 +125,66 @@
                 <div class="container-caption">
                     <p id="caption"></p>
                 </div>
-
             </div>
-
         </section>
         <!-- DONACIONES -->
-        <section class="container-donaciones">
+        <section class="donar__container" id="donar">
+            <p class="donar__card__banner">Si 400 mil personas donan UN Dólar (ó mil pesos argentinos), llegaremos a
+                la meta!</p>
+            <div class="donar__card">
+                <h3 class="donar__card__title">ACÁ PODÉS DONAR! 👇</h3>
+                <div class="donar__como-donar">
+                    <div class="donar__lugares">
+                        <div class="donar__lugares__encabezado">
+                            <img class="donar__lugares__imagen" src="./images/logos-bancos/logo-superville.png"
+                                alt="Logo Banco Supervielle">
+                            <h4 class="donar__lugares__titulo">Banco Supervielle</h4>
+                        </div>
+                        <p class="donar__lugares__txt titular">Judith Tamara Kostetsky</p>
+                        <p class="donar__lugares__txt titular">CUIT/CUIL: 27-20694551-1</p>
+                        <div class="donar__lugares__contenedor-cuentas">
+                            <div class="contenedor-cuentas__pesos">
+                                <p class="donar__lugares__txt negritas">🇦🇷 Cuenta en pesos argentinos</p>
+                                <p class="donar__lugares__txt">CTA: CA ARS 058-4658560-2</p>
+                                <p class="donar__lugares__txt">CBU: 0270058820046585600022</p>
+                                <p class="donar__lugares__txt">ALIAS: CHACAL.LLUVIA.BIGOTE</p>
+                            </div>
+                            <div class="contenedor-cuentas__usd">
+                                <p class="donar__lugares__txt negritas">🇺🇸 Cuenta en dólares americanos</p>
+                                <p class="donar__lugares__txt">CTA: CA U$D 058-4658560-1</p>
+                                <p class="donar__lugares__txt">CBU: 0270058830046585600012</p>
+                                <p class="donar__lugares__txt">ALIAS: BIGOTE.LLUVIA.CHURRO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donar__lugares">
+                        <div class="donar__lugares__encabezado">
+                            <img class="donar__lugares__imagen" src="./images/logos-bancos/logo-paypal.png"
+                                alt="Logo PayPal">
+                            <h4 class="donar__lugares__titulo">PayPal 🌐</h4>
+                        </div>
+                        <a class="link-no-style link-donar" href="https://www.paypal.com">
+                            <p class="donar__lugares__txt">@TamVisual</p>
+                        </a>
+                    </div>
+                    <div class="donar__lugares">
+                        <div class="donar__lugares__encabezado">
+                            <img class="donar__lugares__imagen" src="./images/logos-bancos/logo-mp.png"
+                                alt="Logo Mercado Pago">
+                            <h4 class="donar__lugares__titulo">Mercado Pago 🇦🇷</h4>
+                        </div>
+                        <a class="link-no-style link-donar" href="https://www.mercadopago.com.ar/">
+                            <p class="donar__lugares__txt">tamvisual.mp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+
         </section>
     </main>
+
     <script src="app.js"></script>
 </body>
 

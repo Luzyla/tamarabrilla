@@ -13,6 +13,7 @@
     --color-oscuro: #1c1318;
 
     --color-secundario-transp: #3d289b70;
+    --color-verde-transparente: #ceec9c80;
 
     --box-shadow-color: #00000066;
     --text-shadow-color: #424242;
@@ -84,12 +85,14 @@ html, body {
 }
 
 .button {
-    background-color: var(--color-secundario);
-    color: var(--color-claro);
     padding: 0.3rem 2rem;
     border-radius: 50px;
     margin: 1rem 0;
     box-shadow: 0px 10px 10px -3px var(--box-shadow-color);
+}
+
+.button-donar {
+    background-color: var(--color-acentos);
 }
 
 /* -----------------------------------
@@ -140,6 +143,7 @@ html, body {
     padding-left: 2rem;
 }
 
+
 .hero__progress__imagen {
     position: absolute;
     left: 38vw;
@@ -154,8 +158,6 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-
-.progress-info__txt {}
 
 .progress-info__title {
     font-family: var(--font-family-acentos);
@@ -187,6 +189,11 @@ html, body {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.button-hero {
+    background-color: var(--color-secundario);
+    color: var(--color-claro);
 }
 
 .progress {
@@ -223,7 +230,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0;
+    margin-top: 4rem;
     height: 90vh;
 }
 
@@ -336,8 +343,6 @@ html, body {
     top: 15px;
 }
 
-
-
 /* Add a transparency effect for thumnbail images */
 .demo {
     opacity: 0.6;
@@ -349,23 +354,94 @@ html, body {
 }
 
 /* -----------------------------------
-        
+            DONACIONES
 ----------------------------------- */
-
-
-
-/* .first-color { 
-	background: #65e892; 
+.donar__card__banner {
+    width: 12vw;
+    background-color: var(--color-secundario);
+    position: relative;
+    left: 65vw;
+    top: -19vh;
+    padding: 2rem;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+    color: var(--color-claro);
+    text-shadow: 2px 2px 3px var(--text-shadow-color);
+    box-shadow: 5px 5px 5px 3px var(--box-shadow-color);
+    z-index: 2;
 }
-	
-.second-color { 
-	background: #3994d6; 
+
+.donar__container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-principal);
 }
 
-.third-color { 
-	background: #354abf; 
+.donar__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 3px var(--box-shadow-color);
+    background-color: var(--color-claro);
 }
 
-.fourth-color { 
-	background: #3d289b; 
-} */
+.donar__card__title {
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 10px var(--text-shadow-color);
+}
+
+.donar__como-donar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.donar__lugares {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.donar__lugares__encabezado {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.donar__lugares__imagen {
+    width: 2vw;
+    height: 2vw;
+}
+
+.donar__lugares__titulo {
+    font-size: 2rem;
+}
+
+.donar__lugares__contenedor-cuentas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link-donar {
+    color: var(--color-secundario);
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+.titular {
+    margin-left: 3rem;
+}

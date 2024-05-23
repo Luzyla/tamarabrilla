@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Permanent+Marker&family=Shadows+Into+Light&&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
 :root {
     --font-family-principal: Kalam, sans-serif;
     --font-family-secundario: "Permanent Marker", cursive;
@@ -9,7 +7,6 @@
 
 
     --color-principal: #ceec9c;
-    /* #65e892; */
     --color-secundario: #3d289b;
     --color-acentos: #d4266f;
     --color-claro: #fafafa;
@@ -31,11 +28,9 @@
 html, body {
     font-family: var(--font-family-principal);
     font-size: 1.2rem;
-    width: 100vw;
-    overflow-x: hidden;
     scrollbar-width: thin;
     scroll-behavior: smooth;
-    scrollbar-color: var(--color-principal) var(--color-secundario);
+    scrollbar-color: var(--color-acentos) var(--color-secundario);
 }
 
 /* -----------------------------------
@@ -54,7 +49,6 @@ html, body {
 }
 
 .barra-navegacion {
-    color: var(--color-principal);
     font-weight: 500;
     font-size: 2rem;
     text-shadow: 5px 5px 10px var(--text-shadow-color);
@@ -65,27 +59,12 @@ html, body {
     flex-grow: 2;
 }
 
-.logo {
-    border-radius: 50%;
-    margin-left: 6rem;
-    box-shadow: 0px 10px 15px -3px var(--box-shadow-color);
-    height: 4rem;
-    width: 4rem;
-    border: 4px solid var(--color-principal);
-}
-
-.logo img {
-    display: block;
-    border-radius: 50%;
-    width: 100%;
-    margin: 0 auto;
-    box-shadow: 0px 10px 15px -3px var(--box-shadow-color);
-}
-
 .titulo-principal {
     margin-left: 2rem;
     font-size: 2.5rem;
     font-family: Permanent Marker;
+    color: var(--color-acentos);
+    text-shadow: 4px 4px 4px var(--color-claro);
 }
 
 .botonera {
@@ -101,65 +80,102 @@ html, body {
 .link-no-style {
     text-decoration: none;
     outline: none;
-    color: var(--color-principal);
+    color: var(--color-claro);
 }
 
 .button {
-    background-color: var(--color-principal);
-    color: var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-claro);
     padding: 0.2rem 1.5rem;
     border-radius: 50px;
-    margin-right: 1.5rem;
+    margin: 2rem 1.5rem;
+    box-shadow: 0px 10px 10px -3px var(--box-shadow-color);
+    /* width: 30vw; */
 }
 
 /* -----------------------------------
         MAIN - SECCION PRINCIPAL
 ----------------------------------- */
-
-.container-seccion-principal {
-    background-color: var(--color-claro);
+.hero {
     display: flex;
-    align-items: flex-start;
-    width: 100vw;
-    position: absolute;
-    top: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 107px;
+    background-image: linear-gradient(#fafafa80, #fafafa80), url(./images/background/vecteezy_simple-blue-bubble-circle-background_14422402.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* -----------------------------------
-                ASIDE
+                HERO
 ----------------------------------- */
-.sub-container-progress {
+.hero__card-progress {
+    width: 70vw;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px -3px var(--box-shadow-color);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-self: center;
-    width: 40vw;
-    margin: 0 auto;
-    order: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 1rem;
+    background-color: #fafafaDD;
 }
 
-.progress-info {
+.hero__columnas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hero__frase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-acentos);
+    padding: 2rem;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    color: var(--color-claro);
+    text-shadow: 2px 2px 3px var(--text-shadow-color);
+    width: 45%;
+    padding-left: 2rem;
+}
+
+.hero__progress__imagen {
+    position: absolute;
+    left: 38vw;
+    bottom: 47.5vh;
+}
+
+.hero__picture-container {
+    width: 60%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
 }
 
-.progress-info h2 {
+.progress-info__txt {}
+
+.progress-info__title {
     font-family: var(--font-family-acentos);
 }
 
 .progress-contenedor-imagen {
-    width: 500px;
-    border-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
     margin: 2rem auto;
 }
 
 .progress-imagen {
     display: block;
     width: 50%;
-    border-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,33 +184,24 @@ html, body {
     box-shadow: 0px 10px 10px -3px var(--box-shadow-color);
 }
 
-.card-progress {
-    width: 25vw;
-    border: 2px var(--color-secundario) solid;
-    border-radius: 15px;
-    box-shadow: 0px 10px 10px -3px var(--box-shadow-color);
+.hero__progress-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 1rem;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    gap: 1rem;
-}
-
-.card-progress p {
-    /* font-weight: bold; */
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .progress {
-    width: 90%;
+    width: 65%;
     border: 2px var(--color-secundario) solid;
     height: 2rem;
     border-radius: 15px;
     box-shadow: 0px 5px 5px -3px var(--box-shadow-color);
     text-align: center;
+    background-color: #fafafa;
+    margin: 1rem 0;
 }
 
 .progress-bar {
@@ -206,26 +213,35 @@ html, body {
     border-bottom-left-radius: 13px;
 }
 
-.txt-progress {
+.progress-bar__txt {
     font-size: 1rem;
     color: var(--color-claro);
     font-weight: 900;
-    /* vertical-align: middle; */
 }
 
 /* -----------------------------------
                 CAROUSEL
 ----------------------------------- */
+.seccion-carousel {
+    background-color: var(--color-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+    height: 100vh;
+}
 
 /* Position the image container (needed to position the left and right arrows) */
-.sub-container-carousel {
-    width: 51vw;
-    height: 89vh;
+.container-carousel {
+    width: 60vw;
+    /* height: 89vh; */
     margin: 0.5rem;
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .container-slides-and-thumbnails {
@@ -269,8 +285,8 @@ html, body {
 .prev,
 .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 50vw;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -280,6 +296,8 @@ html, body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    /* eliminar cuando quiera estilar las flechas */
+    display: none;
 }
 
 /* Position the "next button" to the right */

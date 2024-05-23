@@ -12,12 +12,8 @@
 <body>
     <header class="container-encabezado">
         <nav class="barra-navegacion">
-            <!--             <picture class="logo">
-                <img src="images/708697_737487.webp" alt="logo">
-            </picture> -->
             <h1 class="titulo-principal">@Tamvisual</h1>
             <ul class="botonera">
-                <li><a class="link-no-style button" href="#dona">Donaciones</a></li>
                 <li><a class="link-no-style" href="#">La causa</a></li>
                 <li><a class="link-no-style" href="#">Recaudado</a></li>
                 <li><a class="link-no-style" href="#">Publicaciones</a></li>
@@ -25,31 +21,43 @@
                 <li><a class="link-no-style" href="#">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
     <main>
-        <!-- CAROUSEL -->
-        <section class="container-seccion-principal">
-            <div class="sub-container-progress">
-                <div class="progress-info">
-                    <p>Ayudemos a:</p>
-                    <h2>Tamara Kostetsky</h2>
-                    <picture class="progress-contenedor-imagen">
-                        <img class="progress-imagen" src="images/tamAvatar.jpg" alt="Foto de Tamara Kostetsky">
-                    </picture>
+
+        <section class="hero">
+            <div class="hero__card-progress">
+                <div class="hero__columnas">
+                    <div class="hero__frase">
+                        <h3 class="class-progress__title">"Solos somos una gota, juntos somos el océano"</h3>
+                        <p class="class-progress__txt">Ryunosuke Satoro</p>
+                        <img class="hero__progress__imagen" src="./images/about-count-heart-1-1.png" alt="">
+                    </div>
+                    <div class="hero__picture-container">
+                        <picture class="progress-contenedor-imagen">
+                            <img class="progress-imagen" src="images/tamAvatar.jpg" alt="Foto de Tamara Kostetsky">
+                        </picture>
+                        <p class="progress-info__txt">Ayudemos a</p>
+                        <h2 class="progress-info__title">Tamara Kostetsky</h2>
+                    </div>
                 </div>
-                <div class="card-progress">
-                    <p>Tu donación nos acerca a la meta</p>
+                <li><a class="link-no-style button" href="#dona">Tu Donación aquí</a></li>
+                <!-- <p>Tu donación nos acerca a la meta</p> -->
+
+                <div class="hero__progress-container">
                     <div class="progress" role="progressbar" aria-label="Progreso de la recaudación de donaciones"
                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-bar progress-porcentaje">
-                            <p class="txt-progress">5%</p>
+                            <p class="progress-bar__txt">5%</p>
                         </div>
                     </div>
-                    <p>18.000 dólares recaudados de 400.000</p>
+                    <p class="progress__txt">18.000 dólares recaudados de 400.000</p>
                 </div>
             </div>
-            <div class="sub-container-carousel">
+        </section>
+
+        <section class="seccion-carousel">
+            <!-- CAROUSEL -->
+            <div class="container-carousel">
 
                 <div class="container-slides-and-thumbnails">
                     <div class="sub-container-slides">
@@ -87,28 +95,28 @@
 
                     <div class="sub-container-thumbnails">
                         <!-- Thumbnail images -->
-                        <!-- <div class="column"> -->
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla01-es.jpeg"
-                                onclick="currentSlide(1)" alt="Soy Tamara">
+                        <div class="column">
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla01-es.jpeg"
+                                    onclick="currentSlide(1)" alt="Soy Tamara">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla02-es.jpeg"
+                                    onclick="currentSlide(2)" alt="Linfoma del Manto (LCM)">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla03-es.jpeg"
+                                    onclick="currentSlide(3)" alt="¿Que sigue?">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla04-es.jpeg"
+                                    onclick="currentSlide(4)" alt="Esperanza">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla05-es.jpeg"
+                                    onclick="currentSlide(5)" alt="¿Me ayudas?">
+                            </div>
                         </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla02-es.jpeg"
-                                onclick="currentSlide(2)" alt="Linfoma del Manto (LCM)">
-                        </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla03-es.jpeg"
-                                onclick="currentSlide(3)" alt="¿Que sigue?">
-                        </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla04-es.jpeg"
-                                onclick="currentSlide(4)" alt="Esperanza">
-                        </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla05-es.jpeg"
-                                onclick="currentSlide(5)" alt="¿Me ayudas?">
-                        </div>
-                        <!-- </div> -->
                     </div>
                 </div>
                 <!-- Image text -->

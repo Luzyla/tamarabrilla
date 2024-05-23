@@ -39,7 +39,7 @@ html, body {
 ----------------------------------- */
 
 .container-encabezado {
-    height: 10.8vh;
+    height: 10vh;
     box-shadow: 0px 10px 15px -3px var(--box-shadow-color);
     position: fixed;
     top: 0;
@@ -51,7 +51,7 @@ html, body {
 
 .barra-navegacion {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 5px 5px 10px var(--text-shadow-color);
     display: flex;
     justify-content: space-around;
@@ -62,7 +62,7 @@ html, body {
 
 .titulo-principal {
     margin-left: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: Permanent Marker;
     color: var(--color-acentos);
     text-shadow: 4px 4px 4px var(--color-claro);
@@ -103,7 +103,7 @@ html, body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 107px;
+    top: 100px;
     background-image: linear-gradient(#fafafa80, #fafafa80), url(./images/background/vecteezy_simple-blue-bubble-circle-background_14422402.jpg);
     background-size: cover;
     background-repeat: no-repeat;

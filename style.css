@@ -86,15 +86,14 @@ html, body {
 .button {
     background-color: var(--color-secundario);
     color: var(--color-claro);
-    padding: 0.2rem 1.5rem;
+    padding: 0.3rem 2rem;
     border-radius: 50px;
-    margin: 2rem 1.5rem;
+    margin: 1rem 0;
     box-shadow: 0px 10px 10px -3px var(--box-shadow-color);
-    /* width: 30vw; */
 }
 
 /* -----------------------------------
-        MAIN - SECCION PRINCIPAL
+                HERO
 ----------------------------------- */
 .hero {
     display: flex;
@@ -107,9 +106,6 @@ html, body {
     background-repeat: no-repeat;
 }
 
-/* -----------------------------------
-                HERO
------------------------------------ */
 .hero__card-progress {
     width: 70vw;
     border-radius: 15px;
@@ -228,15 +224,12 @@ html, body {
     align-items: center;
     justify-content: center;
     margin: 4rem 0;
-    height: 100vh;
+    height: 90vh;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .container-carousel {
-    width: 60vw;
-    /* height: 89vh; */
-    margin: 0.5rem;
-
+    width: 70vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -244,9 +237,28 @@ html, body {
     align-items: center;
 }
 
+/* Container for image text */
+.container-caption {
+    background-color: var(--color-secundario);
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container-caption p {
+    padding: 2px 16px;
+    color: var(--color-principal);
+    font-weight: 900;
+    vertical-align: middle;
+    text-align: center;
+    font-family: var(--font-family-acentos);
+}
+
 .container-slides-and-thumbnails {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 45vw;
+    align-items: flex-end;
 }
 
 .sub-container-slides {
@@ -257,9 +269,9 @@ html, body {
 .sub-container-thumbnails {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 13vw;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 10vw;
     border-left: 6px solid var(--color-secundario);
 }
 
@@ -269,11 +281,11 @@ html, body {
 }
 
 .slides-images {
-    width: 42vw;
+    width: 37.5vw;
 }
 
 .thumbnail-images {
-    width: 7.9vw;
+    width: 7vw;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -285,8 +297,8 @@ html, body {
 .prev,
 .next {
     cursor: pointer;
-    position: relative;
-    top: 50vw;
+    position: absolute;
+    top: 135vh;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -296,15 +308,16 @@ html, body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-    /* eliminar cuando quiera estilar las flechas */
-    display: none;
+    z-index: 2;
+}
+
+.prev {
+    right: 70vw;
 }
 
 /* Position the "next button" to the right */
 .next {
-    left: 40vw;
-    /* right: 9.5vw; */
-    /* right: 0; */
+    left: 62.5vw;
     border-radius: 3px 0 0 3px;
 }
 
@@ -323,38 +336,7 @@ html, body {
     top: 15px;
 }
 
-/* Container for image text */
-.container-caption {
-    background-color: var(--color-secundario);
-    width: 50.3vw;
-}
 
-.container-caption p {
-    padding: 2px 16px;
-    color: var(--color-principal);
-    font-weight: 900;
-    vertical-align: middle;
-    text-align: center;
-    font-family: var(--font-family-acentos);
-}
-
-/* .column:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
-/* Five columns side by side */
-.column {
-    /* float: left;
-    width: 20.5%; */
-    /*     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    width: 12vw; */
-    /* gap: 2px; */
-}
 
 /* Add a transparency effect for thumnbail images */
 .demo {
@@ -365,6 +347,12 @@ html, body {
 .demo:hover {
     opacity: 1;
 }
+
+/* -----------------------------------
+        
+----------------------------------- */
+
+
 
 /* .first-color { 
 	background: #65e892; 

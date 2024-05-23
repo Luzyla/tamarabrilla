@@ -14,17 +14,17 @@
         <nav class="barra-navegacion">
             <h1 class="titulo-principal">@Tamvisual</h1>
             <ul class="botonera">
-                <li><a class="link-no-style" href="#">La causa</a></li>
-                <li><a class="link-no-style" href="#">Recaudado</a></li>
-                <li><a class="link-no-style" href="#">Publicaciones</a></li>
-                <li><a class="link-no-style" href="#">FAQ</a></li>
-                <li><a class="link-no-style" href="#">Contacto</a></li>
+                <li><a class="link-no-style" href="#lacausa">¿Qué tengo?</a></li>
+                <li><a class="link-no-style" href="#recaudado">Recaudado</a></li>
+                <li><a class="link-no-style" href="#publis">Publicaciones</a></li>
+                <li><a class="link-no-style" href="#faq">FAQ</a></li>
+                <li><a class="link-no-style" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <section class="hero">
+        <section class="hero" id="recaudado">
             <div class="hero__card-progress">
                 <div class="hero__columnas">
                     <div class="hero__frase">
@@ -40,7 +40,9 @@
                         <h2 class="progress-info__title">Tamara Kostetsky</h2>
                     </div>
                 </div>
-                <li><a class="link-no-style button" href="#dona">Tu Donación aquí</a></li>
+                <li class="button-donar">
+                    <a class="link-no-style button" href="#dona">Tu Donación aquí</a>
+                </li>
                 <!-- <p>Tu donación nos acerca a la meta</p> -->
 
                 <div class="hero__progress-container">
@@ -55,14 +57,14 @@
             </div>
         </section>
 
-        <section class="seccion-carousel">
+        <section class="seccion-carousel" id="lacausa">
             <!-- CAROUSEL -->
             <div class="container-carousel">
 
                 <div class="container-slides-and-thumbnails">
                     <div class="sub-container-slides">
                         <!-- Full-width images with number text -->
-                        <div class="mySlides">
+                        <div class="mySlides carousel__imagen">
                             <div class="numbertext">1 / 5</div>
                             <img class="slides-images" src="images/TamBrilla01-es.jpeg">
                         </div>

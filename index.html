@@ -11,8 +11,12 @@
 
 <body>
     <header class="container-encabezado">
-        <nav class="barra-navegacion">
+        <nav class="barra-navegacion" id="menu">
             <h1 class="titulo-principal">@Tamvisual</h1>
+            <div class="barra-navegacion-controles">
+                <a href="#menu" class="abrir"></a>
+                <a href="#" class="cerrar"></a>
+            </div>
             <ul class="botonera">
                 <li><a class="link-no-style" href="#recaudado">Progreso</a></li>
                 <li><a class="link-no-style" href="#lacausa">¿Qué tengo?</a></li>
@@ -23,7 +27,6 @@
         </nav>
     </header>
     <main>
-
         <section class="hero" id="recaudado">
             <div class="hero__card-progress">
                 <div class="hero__columnas">
@@ -129,8 +132,8 @@
         </section>
         <!-- DONACIONES -->
         <section class="donar__container" id="donar">
-            <p class="donar__card__banner">Si 400 mil personas donan UN Dólar (ó mil pesos argentinos), llegaremos a
-                la meta!</p>
+            <!-- <p class="donar__card__banner">Si 400 mil personas donan UN Dólar (ó mil pesos argentinos), llegaremos a
+                la meta!</p> -->
             <div class="donar__card">
                 <h3 class="donar__card__title">ACÁ PODÉS DONAR! 👇</h3>
                 <div class="donar__como-donar">
@@ -157,6 +160,9 @@
                             </div>
                         </div>
                     </div>
+                    <p class="donar__card__banner_2">Si 400 mil personas donan UN Dólar (ó mil pesos argentinos), llegaremos a
+                        la meta!
+                    </p>
                     <div class="donar__lugares">
                         <div class="donar__lugares__encabezado">
                             <img class="donar__lugares__imagen" src="./images/logos-bancos/logo-paypal.png"

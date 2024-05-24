@@ -369,13 +369,14 @@ html, body {
     color: var(--color-claro);
     text-shadow: 2px 2px 3px var(--text-shadow-color);
     box-shadow: 5px 5px 5px 3px var(--box-shadow-color);
-    z-index: 2;
+    z-index: 1;
 }
 
 .donar__container {
     display: flex;
     align-items: center;
     background-color: var(--color-principal);
+
 }
 
 .donar__card {
@@ -444,4 +445,49 @@ html, body {
 
 .titular {
     margin-left: 3rem;
+}
+
+/* -----------------------------------
+            FOOTER
+----------------------------------- */
+
+.seccion-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media__imagen {
+    width: 3vw;
+    height: 3vw;
+}
+
+.firma__container {
+    background-color: var(--color-secundario-transp);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem 0;
+    margin-top: 1rem;
+}
+
+.firma__link {
+    color: var(--color-principal)
+}
+
+.firma__txt {
+    color: var(--color-claro);
+}
+
+/* -----------------------------------
+            EXTRAS
+----------------------------------- */
+.hide {
+    display: none;
 }

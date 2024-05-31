@@ -456,11 +456,13 @@ html, body {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
+    background-color: var(--color-secundario);
 }
 
 .social-media {
     display: flex;
     justify-content: center;
+
 }
 
 .social-media__imagen {

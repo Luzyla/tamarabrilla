@@ -6,55 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamara Brilla!</title>
     <link rel="stylesheet" href="style.css">
-    <!--     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="container-encabezado">
         <nav class="barra-navegacion">
-            <!--             <picture class="logo">
-                <img src="images/708697_737487.webp" alt="logo">
-            </picture> -->
             <h1 class="titulo-principal">@Tamvisual</h1>
             <ul class="botonera">
-                <li><a class="link-no-style button" href="#dona">Donaciones</a></li>
-                <li><a class="link-no-style" href="#">La causa</a></li>
-                <li><a class="link-no-style" href="#">Recaudado</a></li>
-                <li><a class="link-no-style" href="#">Publicaciones</a></li>
-                <li><a class="link-no-style" href="#">FAQ</a></li>
-                <li><a class="link-no-style" href="#">Contacto</a></li>
+                <li><a class="link-no-style" href="#recaudado">Progreso</a></li>
+                <li><a class="link-no-style" href="#lacausa">¿Qué tengo?</a></li>
+                <li><a class="link-no-style" href="#faq">FAQ</a></li>
+                <li><a class="link-no-style" href="#contacto">Contacto</a></li>
+                <li><a class="link-no-style button button-donar" href="#donar">Donar</a></li>
             </ul>
         </nav>
-
     </header>
     <main>
-        <!-- CAROUSEL -->
-        <section class="container-seccion-principal">
-            <div class="sub-container-progress">
-                <div class="progress-info">
-                    <p>Ayudemos a:</p>
-                    <h2>Tamara Kostetsky</h2>
-                    <picture class="progress-contenedor-imagen">
-                        <img class="progress-imagen" src="images/tamAvatar.jpg" alt="Foto de Tamara Kostetsky">
-                    </picture>
+
+        <section class="hero" id="recaudado">
+            <div class="hero__card-progress">
+                <div class="hero__columnas">
+                    <div class="hero__frase">
+                        <h3 class="class-progress__title">"Solos somos una gota, juntos somos el océano"</h3>
+                        <p class="class-progress__txt">Ryunosuke Satoro</p>
+                        <img class="hero__progress__imagen" src="./images/about-count-heart-1-1.png" alt="">
+                    </div>
+                    <div class="hero__picture-container">
+                        <picture class="progress-contenedor-imagen">
+                            <img class="progress-imagen" src="images/tamAvatar.jpg" alt="Foto de Tamara Kostetsky">
+                        </picture>
+                        <p class="progress-info__txt">Ayudemos a</p>
+                        <h2 class="progress-info__title">Tamara Kostetsky</h2>
+                    </div>
                 </div>
-                <div class="card-progress">
-                    <p>Tu donación nos acerca a la meta</p>
+                <li>
+                    <a class="link-no-style button button-hero" href="#donar">Tu Donación aquí</a>
+                </li>
+                <!-- <p>Tu donación nos acerca a la meta</p> -->
+
+                <div class="hero__progress-container">
                     <div class="progress" role="progressbar" aria-label="Progreso de la recaudación de donaciones"
                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-bar progress-porcentaje">
-                            <p class="txt-progress">5%</p>
+                            <p class="progress-bar__txt">6.3%</p>
                         </div>
                     </div>
-                    <p>18.000 dólares recaudados de 400.000</p>
+                    <p class="progress__txt">25.000 dólares recaudados de 400.000</p>
                 </div>
             </div>
-            <div class="sub-container-carousel">
+        </section>
 
-                <div class="slides-container">
-                    <div class="divider-thumbnails">
+        <section class="seccion-carousel" id="lacausa">
+            <!-- CAROUSEL -->
+            <div class="container-carousel">
+
+                <div class="container-slides-and-thumbnails">
+                    <div class="sub-container-slides">
                         <!-- Full-width images with number text -->
-                        <div class="mySlides">
+                        <div class="mySlides carousel__imagen">
                             <div class="numbertext">1 / 5</div>
                             <img class="slides-images" src="images/TamBrilla01-es.jpeg">
                         </div>
@@ -83,47 +93,121 @@
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-
                     </div>
 
-                    <div class="container-thumbnails">
+                    <div class="sub-container-thumbnails">
                         <!-- Thumbnail images -->
-                        <!-- <div class="column"> -->
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla01-es.jpeg"
-                                onclick="currentSlide(1)" alt="Soy Tamara">
+                        <div class="column">
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla01-es.jpeg"
+                                    onclick="currentSlide(1)" alt="Soy Tamara">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla02-es.jpeg"
+                                    onclick="currentSlide(2)" alt="Linfoma del Manto (LCM)">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla03-es.jpeg"
+                                    onclick="currentSlide(3)" alt="¿Que sigue?">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla04-es.jpeg"
+                                    onclick="currentSlide(4)" alt="Esperanza">
+                            </div>
+                            <div class="row">
+                                <img class="demo cursor thumbnail-images" src="images/TamBrilla05-es.jpeg"
+                                    onclick="currentSlide(5)" alt="¿Me ayudas?">
+                            </div>
                         </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla02-es.jpeg"
-                                onclick="currentSlide(2)" alt="Linfoma del Manto (LCM)">
-                        </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla03-es.jpeg"
-                                onclick="currentSlide(3)" alt="¿Que sigue?">
-                        </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla04-es.jpeg"
-                                onclick="currentSlide(4)" alt="Esperanza">
-                        </div>
-                        <div class="row">
-                            <img class="demo cursor thumbnail-images" src="images/TamBrilla05-es.jpeg"
-                                onclick="currentSlide(5)" alt="¿Me ayudas?">
-                        </div>
-                        <!-- </div> -->
                     </div>
                 </div>
                 <!-- Image text -->
                 <div class="container-caption">
                     <p id="caption"></p>
                 </div>
-
             </div>
-
         </section>
         <!-- DONACIONES -->
-        <section class="container-donaciones">
+        <section class="donar__container" id="donar">
+            <p class="donar__card__banner">Si 400 mil personas donan UN Dólar (ó mil pesos argentinos), llegaremos a
+                la meta!</p>
+            <div class="donar__card">
+                <h3 class="donar__card__title">ACÁ PODÉS DONAR! 👇</h3>
+                <div class="donar__como-donar">
+                    <div class="donar__lugares">
+                        <div class="donar__lugares__encabezado">
+                            <img class="donar__lugares__imagen" src="./images/logos-bancos/logo-superville.png"
+                                alt="Logo Banco Supervielle">
+                            <h4 class="donar__lugares__titulo">Banco Supervielle</h4>
+                        </div>
+                        <p class="donar__lugares__txt titular">Judith Tamara Kostetsky</p>
+                        <p class="donar__lugares__txt titular">CUIT/CUIL: 27-20694551-1</p>
+                        <div class="donar__lugares__contenedor-cuentas">
+                            <div class="contenedor-cuentas__pesos">
+                                <p class="donar__lugares__txt negritas">🇦🇷 Cuenta en pesos argentinos</p>
+                                <p class="donar__lugares__txt">CTA: CA ARS 058-4658560-2</p>
+                                <p class="donar__lugares__txt">CBU: 0270058820046585600022</p>
+                                <p class="donar__lugares__txt">ALIAS: CHACAL.LLUVIA.BIGOTE</p>
+                            </div>
+                            <div class="contenedor-cuentas__usd">
+                                <p class="donar__lugares__txt negritas">🇺🇸 Cuenta en dólares americanos</p>
+                                <p class="donar__lugares__txt">CTA: CA U$D 058-4658560-1</p>
+                                <p class="donar__lugares__txt">CBU: 0270058830046585600012</p>
+                                <p class="donar__lugares__txt">ALIAS: BIGOTE.LLUVIA.CHURRO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donar__lugares">
+                        <div class="donar__lugares__encabezado">
+                            <img class="donar__lugares__imagen" src="./images/logos-bancos/logo-paypal.png"
+                                alt="Logo PayPal">
+                            <h4 class="donar__lugares__titulo">PayPal 🌐</h4>
+                        </div>
+                        <a class="link-no-style link-donar" href="https://www.paypal.com" target="_blank">
+                            <p class="donar__lugares__txt">@TamVisual</p>
+                        </a>
+                    </div>
+                    <div class="donar__lugares">
+                        <div class="donar__lugares__encabezado">
+                            <img class="donar__lugares__imagen" src="./images/logos-bancos/logo-mp.png"
+                                alt="Logo Mercado Pago">
+                            <h4 class="donar__lugares__titulo">Mercado Pago 🇦🇷</h4>
+                        </div>
+                        <a class="link-no-style link-donar" href="https://www.mercadopago.com.ar/" target="_blank">
+                            <p class="donar__lugares__txt">tamvisual.mp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+
         </section>
     </main>
+    <footer class="seccion-footer">
+        <div class="social-media">
+            <a class="link-no-style" href="https://www.linkedin.com/in/tamvisual/" target="_blank">
+                <img class="social-media__imagen" src="./images/social-media/icons8-linkedin.svg" alt="LinkedIn">
+            </a>
+            <a class="link-no-style" href="https://www.instagram.com/tamvisual/" target="_blank">
+                <img class="social-media__imagen" src="./images/social-media/icons8-instagram.svg" alt="Instagram">
+            </a>
+            <a class="link-no-style" href="https://x.com/TamVisual" target="_blank">
+                <img class="social-media__imagen" src="./images/social-media/icons8-twitter-96.svg" alt="Twitter">
+            </a>
+            <a class="link-no-style" href="https://www.facebook.com/Tamvisual" target="_blank">
+                <img class="social-media__imagen" src="./images/social-media/icons8-facebook-96.svg" alt="Facebook">
+            </a>
+            <a class="link-no-style" href="mailto:" target="_blank">
+                <img class="social-media__imagen" src="./images/social-media/icons8-email-96.png" alt="Email">
+            </a>
+        </div>
+        <div class="firma__container">
+            <p class="firma__txt">© Copyright 2024 | Created by <a class="link-no-style firma__link negrita"
+                    href="http://matecrew.com" target="_blank"> Mate Crew
+                    Team</a> with ❤️ & 🧉</p>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 

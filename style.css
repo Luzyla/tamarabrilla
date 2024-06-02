@@ -58,7 +58,6 @@ html, body {
     justify-content: space-around;
     padding: 15px 0;
     align-items: center;
-    /*     flex-grow: 2; */
 }
 
 .titulo-principal {
@@ -361,27 +360,42 @@ html, body {
 .donar__card__banner {
     width: 12vw;
     background-color: var(--color-secundario);
-    position: relative;
-    left: 65vw;
-    top: -19vh;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
     padding: 2rem;
-    border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 5px 5px 5px 3px var(--box-shadow-color);
+    z-index: 1;
+    min-height: 50vh;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donar__card__banner-txt {
     text-align: center;
     color: var(--color-claro);
     text-shadow: 2px 2px 3px var(--text-shadow-color);
-    box-shadow: 5px 5px 5px 3px var(--box-shadow-color);
-    z-index: 1;
+}
+
+.donar__card__banner-image {
+    margin-top: 3rem;
+    width: 75px;
 }
 
 .donar__container {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--color-verde-dolar);
     padding: 3rem 0;
 }
 
 .donar__card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -498,8 +512,7 @@ html, body {
 /* -----------------------------------
             RESPONSIVE
 ----------------------------------- */
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1360px) {
     /* -----------------------------------
                 HEADER
     ----------------------------------- */
@@ -577,11 +590,9 @@ html, body {
    ----------------------------------- */
 
     .donar__card__banner {
-        width: 13vw;
-        min-width: 98px;
-        left: 71vw;
-        top: -31vh;
-        padding: 1rem;
+        height: 45vh;
+        padding: 2rem 1rem;
+
     }
 
     .donar__como-donar {
@@ -607,10 +618,9 @@ html, body {
 
 }
 
-/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  } */
 
-@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 860px) {}
 
 @media only screen and (max-width: 600px) {}
 

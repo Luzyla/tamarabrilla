@@ -58,7 +58,7 @@ html, body {
     justify-content: space-around;
     padding: 15px 0;
     align-items: center;
-    flex-grow: 2;
+    /*     flex-grow: 2; */
 }
 
 .titulo-principal {
@@ -208,7 +208,7 @@ html, body {
 }
 
 .progress-bar {
-    width: 5%;
+    width: 7%;
     height: 100%;
     background-color: var(--color-acentos);
     color: var(--color-secundario);
@@ -220,6 +220,8 @@ html, body {
     font-size: 1rem;
     color: var(--color-claro);
     font-weight: 900;
+    vertical-align: center;
+    display: inline;
 }
 
 /* -----------------------------------
@@ -230,7 +232,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    padding-top: 6rem;
     height: 90vh;
 }
 
@@ -331,7 +333,7 @@ html, body {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--color-secundario-transp);
 }
 
 /* Number text (1/3 etc) */
@@ -462,14 +464,11 @@ html, body {
 .social-media {
     display: flex;
     justify-content: center;
-
 }
 
 .social-media__imagen {
-    width: 3vw;
-    height: 3vw;
-    /*     min-width: 30px;
-    min-height: 30px; */
+    width: 35px;
+    height: 35px;
 }
 
 .firma__container {
@@ -495,3 +494,124 @@ html, body {
 .hide {
     display: none;
 }
+
+/* -----------------------------------
+            RESPONSIVE
+----------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    /* -----------------------------------
+                HEADER
+    ----------------------------------- */
+
+    .barra-navegacion {
+        font-size: 1.3rem;
+    }
+
+    /* -----------------------------------
+                HERO
+    ----------------------------------- */
+    .hero__frase {
+        padding: 2.5rem;
+        padding-left: 0.5rem;
+        width: 45%;
+    }
+
+    .class-progress__title {
+        width: 75%;
+    }
+
+    .hero__progress__imagen {
+        left: 36vw;
+        bottom: 43vh;
+    }
+
+    .progress-bar__txt {
+        font-size: 0.8rem;
+    }
+
+    /* -----------------------------------
+                CAROUSEL
+   ----------------------------------- */
+
+    .container-carousel {
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .container-caption {
+        width: 70vw;
+    }
+
+    .container-slides-and-thumbnails {
+        width: 70vw;
+    }
+
+    .slides-images {
+        width: 100%;
+    }
+
+    .thumbnail-images {
+        width: 100%;
+    }
+
+    .sub-container-slides {
+        max-width: 65vw;
+    }
+
+    .sub-container-thumbnails {
+        width: 25vw;
+        justify-content: center;
+    }
+
+    .prev {
+        right: 80.5vw;
+    }
+
+    .next {
+        left: 69vw;
+    }
+
+    /* -----------------------------------
+                DONACIONES
+   ----------------------------------- */
+
+    .donar__card__banner {
+        width: 13vw;
+        min-width: 98px;
+        left: 71vw;
+        top: -31vh;
+        padding: 1rem;
+    }
+
+    .donar__como-donar {
+        width: 65vw;
+        padding: 2rem;
+    }
+
+    .donar__lugares__contenedor-cuentas {
+        width: 40vw;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .donar__lugares__imagen {
+        min-width: 40px;
+        min-height: 40px;
+    }
+
+    /* -----------------------------------
+            FOOTER
+    ----------------------------------- */
+
+}
+
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  } */
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 450px) {}

@@ -14,6 +14,7 @@
 
     --color-secundario-transp: #3d289b70;
     --color-verde-transparente: #ceec9c80;
+    --color-verde-dolar: #85BB65;
 
     --box-shadow-color: #00000066;
     --text-shadow-color: #424242;
@@ -117,7 +118,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 3rem 0;
     gap: 1rem;
     background-color: #fafafaDD;
 }
@@ -142,7 +143,6 @@ html, body {
     width: 45%;
     padding-left: 2rem;
 }
-
 
 .hero__progress__imagen {
     position: absolute;
@@ -230,7 +230,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
     height: 90vh;
 }
 
@@ -375,8 +375,8 @@ html, body {
 .donar__container {
     display: flex;
     align-items: center;
-    background-color: var(--color-principal);
-
+    background-color: var(--color-verde-dolar);
+    padding: 3rem 0;
 }
 
 .donar__card {
@@ -468,6 +468,8 @@ html, body {
 .social-media__imagen {
     width: 3vw;
     height: 3vw;
+    /*     min-width: 30px;
+    min-height: 30px; */
 }
 
 .firma__container {
